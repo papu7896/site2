@@ -1,24 +1,39 @@
-import logo from './logo.svg';
+
 import './App.css';
+import Navbar from './components/Navbar';
+
+import {
+  BrowserRouter as Router,
+  Routes,
+  Route,
+  Link
+} from "react-router-dom";
+import Login from './screens/Login';
+import Signin from './screens/Signin';
+import Home from './screens/Home';
+import '../node_modules/bootstrap-dark-5/dist/css/bootstrap-dark.min.css';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle';
+import '../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js';
+import Contact from './components/Contact';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <>
+    <Router>
+    
+    <div >
+      <Routes>
+        <Route exact path='/Home' element={<Home/>}/>
+        <Route exact path='/Contact' element={<Contact/>}/>
+        
+
+        <Route exact path='/login' element={<Login/>}/>
+        <Route  exact path='/Signin' element={<Signin/>}/>
+      </Routes>
     </div>
+    </Router>
+     </>
   );
 }
 
