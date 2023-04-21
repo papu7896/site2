@@ -11,7 +11,7 @@ export default function Footer() {
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">FAQs</a></li>
         <li class="nav-item"><a href="#" class="nav-link px-2 text-muted">About</a></li>
       </ul>
-      <p class="text-center text-muted">© 2023 Restaurant, Inc</p>
+      <p class="text-center text-muted">© 2023 Tourism, Inc</p>
     </footer>
   </div></div>
   )

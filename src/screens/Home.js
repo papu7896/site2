@@ -10,6 +10,7 @@ import Founder from '../components/Founder'
 export default function Home() {
   return (
     <div>
+      
       <div><Navbar /></div>
       <div><Carosoul/></div>
       <div><Cart/></div>

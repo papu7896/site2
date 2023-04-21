@@ -19,21 +19,23 @@ import Contact from './components/Contact';
 
 function App() {
   return (
-    <>
-    <Router>
     
-    <div >
-      <Routes>
-        <Route exact path='/Home' element={<Home/>}/>
-        <Route exact path='/Contact' element={<Contact/>}/>
-        
 
-        <Route exact path='/login' element={<Login/>}/>
-        <Route  exact path='/Signin' element={<Signin/>}/>
-      </Routes>
-    </div>
-    </Router>
-     </>
+      <Router>
+
+        
+          <Routes>
+            <Route  path="/" element={<Home/>} />
+            <Route  path='/Contact' element={<Contact />} />
+            <Route  path='/login' element={<Login />} />
+            <Route  path='/Signin' element={<Signin />} />
+          </Routes>
+          <Routes>
+          <Route exact path="/Home" element={<Home/>} />
+          </Routes>
+        
+      </Router>
+    
   );
 }
 
